@@ -1,0 +1,55 @@
+body {
+    background: rgba(34,230,220,1);
+    background: linear-gradient(to right, rgba(34,230,220,1) 0%, rgba(34,148,209,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#22e6dc', endColorstr='#2294d1', GradientType=1 );
+}
+
+.weatherDataCont {
+    width: 450px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow:rgba(0,0,0,0.3) 4px 4 px 10px;
+}
+
+.weatherTemperatureCont {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temperature {
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 15px;
+    color: #333;
+}
+
+.temperatureType{
+    font-weight: bold;
+    color: #555;
+    margin-top: 10px;
+}
+
+.wicon {
+    color: #505050;
+}
+
+.weatherExtraInfoCont {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.extraInfoText{
+    display: block;
+    line-height: 25px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}

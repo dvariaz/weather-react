@@ -12,6 +12,8 @@ body {
     background-color: white;
     border-radius: 5px;
     box-shadow:rgba(0,0,0,0.3) 4px 4 px 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .weatherTemperatureCont {

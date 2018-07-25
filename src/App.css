@@ -37,3 +37,14 @@
   background-color: green;
   height: 200px;
 }
+
+.yellow{
+  background-color: yellow;
+  height: 200px;
+}
+
+.detail {
+  height: 100vh;
+  width: 100%;
+  background: gray;
+}

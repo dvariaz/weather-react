@@ -1,8 +1,11 @@
 @media (max-width: 48em) {
     .locationList {
-        background-color: green;
         max-height: 200px;
         overflow-y: auto;
         margin-bottom: 20px;
+    }
+    
+    .locationList::-webkit-scrollbar { 
+        display: none; 
     }
 }

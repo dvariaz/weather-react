@@ -35,8 +35,7 @@ const getWeatherIcon = weatherState => {
 const WeatherTemperature = ({ temperature, weatherState }) => (
         <div className="weatherTemperatureCont">
                 {getWeatherIcon(weatherState)}
-                <span className="temperature">{ temperature }</span>
-                <span className="temperatureType">°C</span>
+                <span className="temperature">{ temperature }<span className="temperatureType">°C</span></span>
         </div>
     );
 

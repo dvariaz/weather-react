@@ -10,8 +10,8 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import orange from '@material-ui/core/colors/purple';
 
-import LocationList from './components/LocationList';
-import ForecastExtended from './components/ForecastExtended';
+import LocationListContainer from './containers/LocationListContainer';
+import ForecastExtendedContainer from './containers/ForecastExtendedContainer';
 
 import './App.css';
 
@@ -36,19 +36,7 @@ const cities = [
 
 class App extends Component {
   
-  constructor(){
-    super();
-    this.state = { city: null };
-  }
-  
-  handleSelectedLocation = city => {
-    this.setState({ city });
-    console.log(`handleSelectedLocation ${ city }`);
-    
-  };
-  
   render() {
-    const { city } = this.state;
     return (
       <MuiThemeProvider theme={ theme }>
         <AppBar position="static" color="default">
@@ -59,25 +47,22 @@ class App extends Component {
               <MenuIcon />
             </IconButton>
             <Typography style={{ 
-                    margin: 'auto'
+                    margin: 'auto',
+                    display: 'flex'
                 }} color="inherit">
-              Weather App
+              <img className="App-logo" src="/img/logos/weather_logo.png" />
             </Typography>
           </Toolbar>
         </AppBar>
-        <Grid>
-          <Row>
-            <Col xs={12} md={6}>
-              <LocationList cities={ cities } 
-                onSelectedLocation= { this.handleSelectedLocation }/>
+        <Grid fluid style={{ padding: 0 }}>
+          <Row style={{ margin: 0 }}>
+            <Col xs={12} md={6} className="LocationList-container">
+              <LocationListContainer cities={ cities }/>
             </Col>
-            <Col xs={12} md={6}>
+            <Col xs={12} md={6} style={{ padding: 0 }}>
               <Paper zDepth={4}>
                 <div className='detail'>
-                  { 
-                    city && <ForecastExtended city={ city }/>
-                    
-                  }
+                  <ForecastExtendedContainer/>
                 </div>
               </Paper>
             </Col>

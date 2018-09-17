@@ -1,11 +1,19 @@
-@media (max-width: 48em) {
-    .locationList {
-        max-height: 200px;
-        overflow-y: auto;
-        margin-bottom: 20px;
-    }
+.LocationList-container {
+    padding-bottom: 20px;
+}
+
+.LocationList-container {
+    height: calc(100vh - 64px);
+    overflow-y: scroll;
+}
     
-    .locationList::-webkit-scrollbar { 
-        display: none; 
+@media (max-width: 48em) {
+    .LocationList-container {
+        max-height: 40vh;
+        overflow-y: auto;
     }
+}
+
+.LocationList-container::-webkit-scrollbar { 
+    display: none; 
 }

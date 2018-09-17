@@ -1,6 +1,6 @@
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 60px;
+  margin: auto;
 }
 
 .App-header {
@@ -44,8 +44,19 @@
 }
 
 .detail {
-  margin-top: 20px;
   height: calc(100vh - 64px);
+  padding: 0 20px;
   width: 100%;
   background: #252525;
+  overflow-y: scroll;
+}
+
+.detail::-webkit-scrollbar { 
+    display: none; 
+}
+
+@media (max-width: 48em) {
+  .detail {
+    height: calc(60vh - 64px);
+  }
 }

@@ -50,7 +50,7 @@ class App extends Component {
                     margin: 'auto',
                     display: 'flex'
                 }} color="inherit">
-              <img className="App-logo" src="/img/logos/weather_logo.png" />
+              <img className="App-logo" src="/img/logos/weather_logo.png" alt="Weather App Logo"/>
             </Typography>
           </Toolbar>
         </AppBar>

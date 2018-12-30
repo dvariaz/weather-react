@@ -1,24 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import WeatherLocation from './../WeatherLocation';
+import WeatherLocation from './WeatherLocation';
 import './styles.css';
 
 const LocationList = ({ cities, onSelectedLocation }) => {
     const handleWeatherLocationClick = city => {
-        console.log("handleWeatherLocationClick");
+        //console.log("handleWeatherLocationClick");
         onSelectedLocation(city);
-    }
-    
+    };
+
     const strToComponent = cities => (
-        cities.map( (city) => (
-            <WeatherLocation 
-                key={city}
-                city={ city }
-                onWeatherLocationClick={() => handleWeatherLocationClick(city)}/>))
+        cities.map( city => 
+            (
+                <WeatherLocation 
+                    key={city.key} 
+                    city={city.name} 
+                    onWeatherLocationClick={() => handleWeatherLocationClick(city.name)} 
+                    data={city.data} />))
     );
 
     return (<div className="locationList">
-        { strToComponent(cities) }
+        {strToComponent(cities)}
     </div>);
 };
 

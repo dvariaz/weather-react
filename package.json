@@ -10,7 +10,7 @@
     "moment": "^2.22.2",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react-dom": "^16.13.1",
     "react-flexbox-grid": "^2.1.2",
     "react-redux": "^5.0.7",
     "react-scripts": "^1.1.5",

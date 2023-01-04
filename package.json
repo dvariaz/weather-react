@@ -13,7 +13,7 @@
     "react-dom": "^16.13.1",
     "react-flexbox-grid": "^2.1.2",
     "react-redux": "^5.0.7",
-    "react-scripts": "^1.1.5",
+    "react-scripts": "^5.0.1",
     "react-swipeable-tabs": "^2.2.0",
     "react-weathericons": "^1.0.4",
     "redux": "^4.0.0",
